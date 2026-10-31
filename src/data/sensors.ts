@@ -1,0 +1,13 @@
+import type { SensorDef } from '../types/dashboard';
+
+export const sensors: SensorDef[] = [
+{ key: 'moisture', label: 'Soil Moisture', unit: '%', icon: 'droplet', tone: 'water', base: 28, decimals: 0, jitter: 0.6, min: 0, max: 100, goodMin: 20, goodMax: 40, goodLabel: 'Optimal', lowLabel: 'Dry', highLabel: 'Wet', footnote: 'Optimal: 20–40%' },
+{ key: 'soilTemp', label: 'Soil Temperature', unit: '°C', icon: 'thermometer', tone: 'heat', base: 26.4, decimals: 1, jitter: 0.15, min: 0, max: 50, goodMin: 20, goodMax: 30, goodLabel: 'Normal', lowLabel: 'Cool', highLabel: 'Hot', footnote: 'Optimal: 20–30°C' },
+{ key: 'light', label: 'Light Intensity', unit: 'lux', icon: 'sun', tone: 'sun', base: 18420, decimals: 0, jitter: 180, min: 0, max: 100000, goodMin: 12000, goodMax: 18000, goodLabel: 'Good', lowLabel: 'Low', highLabel: 'High', footnote: 'Good: 12,000–30,000' },
+{ key: 'rainfall', label: 'Rainfall (Today)', unit: 'mm', icon: 'rain', tone: 'water', base: 12, decimals: 0, jitter: 0, min: 0, max: 300, goodMin: 0, goodMax: 5, goodLabel: 'Light', lowLabel: 'None', highLabel: 'Moderate', footnote: '24h total', informational: true },
+{ key: 'airTemp', label: 'Air Temperature', unit: '°C', icon: 'thermometer', tone: 'heat', base: 28, decimals: 0, jitter: 0.25, min: -10, max: 50, goodMin: 20, goodMax: 32, goodLabel: 'Normal', lowLabel: 'Cool', highLabel: 'Hot', footnote: 'Optimal: 20–32°C' },
+{ key: 'humidity', label: 'Air Humidity', unit: '%', icon: 'droplet', tone: 'water', base: 65, decimals: 0, jitter: 0.8, min: 0, max: 100, goodMin: 50, goodMax: 80, goodLabel: 'Normal', lowLabel: 'Dry', highLabel: 'Humid', footnote: 'Optimal: 50–80%' },
+{ key: 'ph', label: 'Soil pH', unit: '', icon: 'flask', tone: 'leaf', base: 6.5, decimals: 1, jitter: 0.03, min: 0, max: 14, goodMin: 6.0, goodMax: 6.8, goodLabel: 'Good', lowLabel: 'Acidic', highLabel: 'Alkaline', footnote: 'Optimal: 6.0–6.8' },
+{ key: 'nitrogen', label: 'Nitrogen (N)', unit: 'ppm', icon: 'leaf', tone: 'leaf', base: 42, decimals: 0, jitter: 0.4, min: 0, max: 200, goodMin: 40, goodMax: 60, goodLabel: 'Good', lowLabel: 'Low', highLabel: 'High', footnote: 'Optimal: 40–60' },
+{ key: 'phosphorus', label: 'Phosphorus (P)', unit: 'ppm', icon: 'sprout', tone: 'sun', base: 28, decimals: 0, jitter: 0.35, min: 0, max: 200, goodMin: 30, goodMax: 50, goodLabel: 'Good', lowLabel: 'Moderate', highLabel: 'High', footnote: 'Optimal: 25–50' },
+{ key: 'potassium', label: 'Potassium (K)', unit: 'ppm', icon: 'wheat', tone: 'leaf', base: 180, decimals: 0, jitter: 1.2, min: 0, max: 500, goodMin: 150, goodMax: 250, goodLabel: 'Good', lowLabel: 'Low', highLabel: 'High', footnote: 'Optimal: 150–250' }];
