@@ -56,7 +56,7 @@ export function HeroSection({
             Higher Yields.
           </h1>
           <p className="mt-3 max-w-[360px] text-[15px] leading-snug text-white/90">
-            AI-powered soil and weather insights from real devices to help you make better farming decisions.
+            AI-powered soil insights from real devices to help you make better farming decisions.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <button
